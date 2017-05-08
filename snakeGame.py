@@ -80,8 +80,8 @@ while True:
                 changeto = 'UP'
             if event.key == pygame.K_DOWN or event.key == ord('s'):
                 changeto = 'DOWN'
-            if event.key == pygame.K_ESCAPE:
-                pygame.event.post(pygame.event.Event(QUIT))
+            if event.key == pygame.K_SPACE:
+                pygame.event.post(pygame.event.Event(pygame.QUIT))
 
     # validation of deriction
     if changeto == 'RIGHT' and not direction == 'LEFT':
